@@ -26,6 +26,7 @@ export default function Hero() {
             {/* Text Content */}
             <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
               {/* Main Title */}
+
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-slide-up">
                 <span className="text-neutral-900">I Build</span>
                 <br />
@@ -58,9 +59,9 @@ export default function Hero() {
                   replacement for careful engineering.
                 </p>
                 <p className="text-neutral-500 flex items-center justify-center lg:justify-start gap-2">
-                  <Sparkles className="w-4 h-4 text-violet-400" />
-                  4 years shipping production-ready products using React,
-                  Next.js, Node.js &amp; TypeScript.
+                  <Sparkles className="w-4 h-4 text-violet-400" />4 years
+                  shipping production-ready products using React, Next.js,
+                  Node.js &amp; TypeScript.
                 </p>
               </div>
 
@@ -140,7 +141,7 @@ export default function Hero() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce-soft">
         <a
           href="#skills"
-             className="flex flex-col items-center gap-2 text-neutral-500 hover:text-neutral-700 transition-colors"
+          className="flex flex-col items-center gap-2 text-neutral-500 hover:text-neutral-700 transition-colors"
         >
           <span className="text-xs uppercase tracking-widest">Explore</span>
           <ChevronDown className="w-5 h-5" />

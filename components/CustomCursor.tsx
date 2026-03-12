@@ -73,7 +73,7 @@ export default function CustomCursor() {
         }}
       >
         <div
-          className={`rounded-full bg-white transition-all duration-150 ease-out ${
+          className={`rounded-full bg-neutral-900 transition-all duration-150 ease-out ${
             isClicking 
               ? 'w-3 h-3' 
               : isPointer 
@@ -101,7 +101,7 @@ export default function CustomCursor() {
               ? 'w-8 h-8 border-violet-400/80 bg-violet-400/10'
               : isPointer
                 ? 'w-12 h-12 border-violet-400/60 bg-violet-400/5'
-                : 'w-8 h-8 border-white/30'
+              : 'w-8 h-8 border-neutral-400/70 bg-neutral-400/5'
           }`}
           style={{
             transform: 'translate(-50%, -50%) translate(50%, 50%)',
