@@ -51,7 +51,7 @@ export default function Hero() {
                 <p className="text-xl md:text-2xl text-neutral-400">
                   Hey, I&apos;m{" "}
                   <span className="text-neutral-100 font-semibold">Zeshan</span>{" "}
-                  — a Senior Full Stack Developer
+                  — a solution-driven Full Stack Web Developer
                 </p>
               </div>
 
