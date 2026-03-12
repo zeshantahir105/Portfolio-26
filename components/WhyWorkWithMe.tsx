@@ -57,11 +57,13 @@ export default function WhyWorkWithMe() {
             <p className="text-violet-400 text-sm font-medium tracking-wider uppercase mb-3">
               The Difference
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-neutral-100 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 mb-4">
               Why Clients Choose Me
             </h2>
-            <p className="text-lg text-neutral-500 max-w-xl mx-auto">
-              More than code — I deliver results that move the needle
+            <p className="text-lg text-neutral-600 max-w-xl mx-auto">
+              In an AI-first era, I combine automation with human judgment —
+              using AI to explore options while I own the structure, trade-offs,
+              and final decisions.
             </p>
           </div>
 
@@ -70,12 +72,12 @@ export default function WhyWorkWithMe() {
             {reasons.map((reason, index) => (
               <div
                 key={index}
-                className="group flex items-center gap-4 p-5 rounded-xl bg-white/[0.02] border border-white/5 hover:border-violet-500/30 transition-colors duration-200"
+                className="group flex items-center gap-4 p-5 rounded-xl bg-white border border-neutral-200 hover:border-violet-300 transition-colors duration-200"
               >
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center text-violet-400">
                   {reason.icon}
                 </div>
-                <p className="text-sm text-neutral-300 font-medium">
+                <p className="text-sm text-neutral-800 font-medium">
                   {reason.text}
                 </p>
               </div>

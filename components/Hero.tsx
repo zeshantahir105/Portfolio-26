@@ -25,20 +25,9 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Text Content */}
             <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
-              {/* Badge */}
-              <div
-                className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm animate-slide-down"
-                style={{ animationDelay: "0.1s" }}
-              >
-                <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                <span className="text-sm text-neutral-300">
-                  Open to exciting opportunities
-                </span>
-              </div>
-
               {/* Main Title */}
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-slide-up">
-                <span className="text-neutral-100">I Build</span>
+                <span className="text-neutral-900">I Build</span>
                 <br />
                 <span className="gradient-text">Digital Experiences</span>
               </h1>
@@ -48,9 +37,9 @@ export default function Hero() {
                 className="mb-8 animate-slide-up"
                 style={{ animationDelay: "0.2s" }}
               >
-                <p className="text-xl md:text-2xl text-neutral-400">
+                <p className="text-xl md:text-2xl text-neutral-600">
                   Hey, I&apos;m{" "}
-                  <span className="text-neutral-100 font-semibold">Zeshan</span>{" "}
+                  <span className="text-neutral-900 font-semibold">Zeshan</span>{" "}
                   — a solution-driven Full Stack Web Developer
                 </p>
               </div>
@@ -60,26 +49,24 @@ export default function Hero() {
                 className="max-w-2xl mx-auto lg:mx-0 space-y-4 mb-12 animate-slide-up"
                 style={{ animationDelay: "0.3s" }}
               >
-                <p className="text-lg text-neutral-400 leading-relaxed">
-                  I transform ideas into{" "}
+                <p className="text-lg text-neutral-600 leading-relaxed">
+                  I design the{" "}
                   <span className="text-violet-400 font-medium">
-                    high-performance web applications
+                    architecture, data flow, and user experience
                   </span>{" "}
-                  using modern technologies like{" "}
-                  <span className="text-neutral-200">React</span>,{" "}
-                  <span className="text-neutral-200">Next.js</span>,{" "}
-                  <span className="text-neutral-200">Node.js</span> &{" "}
-                  <span className="text-neutral-200">TypeScript</span>.
+                  while using AI as a power tool to move faster, not a
+                  replacement for careful engineering.
                 </p>
                 <p className="text-neutral-500 flex items-center justify-center lg:justify-start gap-2">
-                  <Sparkles className="w-4 h-4 text-violet-400" />4 years
-                  shipping production-ready products for startups & enterprises
+                  <Sparkles className="w-4 h-4 text-violet-400" />
+                  4 years shipping production-ready products using React,
+                  Next.js, Node.js &amp; TypeScript.
                 </p>
               </div>
 
               {/* Location */}
               <div
-                className="flex items-center justify-center lg:justify-start gap-2 mb-10 text-neutral-500 animate-slide-up"
+                className="flex items-center justify-center lg:justify-start gap-2 mb-10 text-neutral-600 animate-slide-up"
                 style={{ animationDelay: "0.4s" }}
               >
                 <MapPin className="w-4 h-4" />
@@ -95,7 +82,7 @@ export default function Hero() {
               >
                 <a
                   href="#contact"
-                  className="group flex items-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
+                  className="group flex items-center gap-2 px-6 py-3 bg-violet-600 hover:bg-violet-500 text-white rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-violet-400/25"
                 >
                   Let&apos;s Talk
                   <span className="group-hover:translate-x-1 transition-transform">
@@ -106,7 +93,7 @@ export default function Hero() {
                   href="https://www.linkedin.com/in/muhammad-zeshan-tahir-638423179/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-neutral-200 rounded-lg font-medium transition-all duration-300"
+                  className="group flex items-center gap-2 px-6 py-3 bg-white border border-neutral-200 hover:border-violet-300 text-neutral-700 hover:text-neutral-900 rounded-lg font-medium transition-all duration-300"
                 >
                   <Linkedin className="w-5 h-5" />
                   LinkedIn
@@ -115,7 +102,7 @@ export default function Hero() {
                   href="https://drive.google.com/drive/folders/1sbixgZeyICXZ87MwEzgf4nM_ciDufZYF?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-neutral-200 rounded-lg font-medium transition-all duration-300"
+                  className="group flex items-center gap-2 px-6 py-3 bg-white border border-neutral-200 hover:border-violet-300 text-neutral-700 hover:text-neutral-900 rounded-lg font-medium transition-all duration-300"
                 >
                   <FileText className="w-5 h-5" />
                   Resume
@@ -153,7 +140,7 @@ export default function Hero() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce-soft">
         <a
           href="#skills"
-          className="flex flex-col items-center gap-2 text-neutral-500 hover:text-neutral-300 transition-colors"
+             className="flex flex-col items-center gap-2 text-neutral-500 hover:text-neutral-700 transition-colors"
         >
           <span className="text-xs uppercase tracking-widest">Explore</span>
           <ChevronDown className="w-5 h-5" />

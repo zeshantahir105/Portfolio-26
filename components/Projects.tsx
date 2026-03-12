@@ -245,10 +245,10 @@ export default function Projects() {
           <p className="text-violet-400 text-sm font-medium tracking-wider uppercase mb-3">
             Selected Work
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-neutral-100 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 mb-4">
             Projects That Deliver Results
           </h2>
-          <p className="text-lg text-neutral-500 max-w-xl mx-auto">
+          <p className="text-lg text-neutral-600 max-w-xl mx-auto">
             From concept to deployment — real products serving thousands of
             users
           </p>
@@ -258,14 +258,14 @@ export default function Projects() {
         <div className="hidden md:flex justify-end gap-3 mb-6 max-w-7xl mx-auto">
           <button
             onClick={handlePrev}
-            className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-400 hover:text-white hover:bg-white/10 hover:border-violet-500/50 transition-all duration-300"
+            className="p-3 rounded-full bg-white border border-neutral-200 text-neutral-600 hover:text-violet-600 hover:border-violet-300 hover:bg-violet-50 transition-all duration-300"
             aria-label="Previous project"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={handleNext}
-            className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-400 hover:text-white hover:bg-white/10 hover:border-violet-500/50 transition-all duration-300"
+            className="p-3 rounded-full bg-white border border-neutral-200 text-neutral-600 hover:text-violet-600 hover:border-violet-300 hover:bg-violet-50 transition-all duration-300"
             aria-label="Next project"
           >
             <ChevronRight className="w-5 h-5" />
@@ -291,7 +291,7 @@ export default function Projects() {
                 key={index}
                 className="flex-shrink-0 w-[75%] sm:w-[45%] md:w-[32%] lg:w-[28%] snap-start"
               >
-                <div className="group relative bg-neutral-900/50 rounded-2xl border border-white/5 overflow-hidden hover:border-violet-500/30 transition-colors duration-200 h-full">
+                <div className="group relative bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:border-violet-300 transition-colors duration-200 h-full">
                   {/* Gradient accent line */}
                   <div
                     className={`absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r ${project.accent} opacity-80`}
@@ -309,7 +309,7 @@ export default function Projects() {
                       className="object-cover object-top"
                     />
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
                     {/* Floating badge */}
                     <div className="absolute top-3 left-3">
@@ -339,12 +339,12 @@ export default function Projects() {
                   {/* Content Section */}
                   <div className="p-4">
                     {/* Title */}
-                    <h3 className="text-base font-bold text-neutral-100 mb-1.5 group-hover:text-violet-400 transition-colors duration-300">
+                    <h3 className="text-base font-bold text-neutral-900 mb-1.5 group-hover:text-violet-600 transition-colors duration-300">
                       {project.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-neutral-500 text-xs mb-3 leading-relaxed line-clamp-2">
+                    <p className="text-neutral-600 text-xs mb-3 leading-relaxed line-clamp-2">
                       {project.description}
                     </p>
 
@@ -353,13 +353,13 @@ export default function Projects() {
                       {project.tech.slice(0, 3).map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-2 py-0.5 bg-white/5 border border-white/10 rounded text-[10px] text-neutral-400"
+                          className="px-2 py-0.5 bg-violet-50 border border-violet-100 rounded text-[10px] text-violet-700"
                         >
                           {tech}
                         </span>
                       ))}
                       {project.tech.length > 3 && (
-                        <span className="px-2 py-0.5 text-[10px] text-neutral-600">
+                        <span className="px-2 py-0.5 text-[10px] text-neutral-500">
                           +{project.tech.length - 3}
                         </span>
                       )}

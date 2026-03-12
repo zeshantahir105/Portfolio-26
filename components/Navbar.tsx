@@ -41,8 +41,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out-expo ${
         isScrolled
-          ? 'bg-neutral-950/80 backdrop-blur-xl border-b border-white/5'
-          : 'bg-transparent'
+          ? 'bg-white/90 backdrop-blur-xl border-b border-neutral-200 shadow-sm'
+          : 'bg-white/80'
       }`}
     >
       <div className="container mx-auto px-6">
@@ -52,7 +52,7 @@ export default function Navbar() {
             href="#"
             className="flex items-center gap-3 group"
           >
-            <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-violet-500/50 ring-offset-2 ring-offset-neutral-950 transition-all duration-300 group-hover:ring-violet-400">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-violet-500/50 ring-offset-2 ring-offset-white transition-all duration-300 group-hover:ring-violet-400">
               <Image
                 src="/profile.png"
                 alt="Muhammad Zeshan Tahir"
@@ -61,7 +61,7 @@ export default function Navbar() {
                 priority
               />
             </div>
-            <span className="text-lg font-semibold text-neutral-100 hidden sm:block transition-colors group-hover:text-violet-400">
+            <span className="text-lg font-semibold text-neutral-900 hidden sm:block transition-colors group-hover:text-violet-500">
               MZT
             </span>
           </a>
@@ -79,8 +79,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
                     isActive
-                      ? 'text-violet-400'
-                      : 'text-neutral-400 hover:text-neutral-100'
+                      ? 'text-violet-600'
+                      : 'text-neutral-500 hover:text-neutral-900'
                   }`}
                 >
                   {link.name}
@@ -92,7 +92,7 @@ export default function Navbar() {
             })}
             <a
               href="#contact"
-              className="ml-4 px-5 py-2.5 bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
+              className="ml-4 px-5 py-2.5 bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-violet-400/25"
             >
               Get In Touch
             </a>
@@ -100,7 +100,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-neutral-400 hover:text-white transition-colors"
+            className="md:hidden p-2 text-neutral-600 hover:text-neutral-900 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -118,12 +118,12 @@ export default function Navbar() {
             isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="pb-6 pt-2 space-y-1">
+          <div className="pb-6 pt-2 space-y-1 bg-white">
             {navLinks.map((link, index) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-4 py-3 text-neutral-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
+                className="block px-4 py-3 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 rounded-lg transition-all duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >

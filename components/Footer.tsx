@@ -44,9 +44,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative border-t border-white/5">
+    <footer className="relative border-t border-neutral-200 bg-neutral-50/80">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-neutral-100 to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -57,7 +57,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold mb-3">
                 <span className="gradient-text">Zeshan Tahir</span>
               </h3>
-              <p className="text-sm text-neutral-500 mb-4 max-w-sm">
+              <p className="text-sm text-neutral-600 mb-4 max-w-sm">
                 Full Stack Developer with 4 years of experience crafting
                 high-performance web applications. Let&apos;s build something
                 amazing together.
@@ -70,7 +70,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div className="md:col-span-3">
-              <h4 className="text-sm font-semibold text-neutral-300 mb-4">
+              <h4 className="text-sm font-semibold text-neutral-800 mb-4">
                 Navigation
               </h4>
               <ul className="space-y-2">
@@ -78,7 +78,7 @@ export default function Footer() {
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-sm text-neutral-500 hover:text-violet-400 transition-colors"
+                      className="text-sm text-neutral-600 hover:text-violet-600 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -89,7 +89,7 @@ export default function Footer() {
 
             {/* Connect */}
             <div className="md:col-span-4">
-              <h4 className="text-sm font-semibold text-neutral-300 mb-4">
+              <h4 className="text-sm font-semibold text-neutral-800 mb-4">
                 Connect
               </h4>
               <div className="flex flex-wrap gap-3">
@@ -103,7 +103,7 @@ export default function Footer() {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="p-2.5 rounded-lg bg-white/[0.03] border border-white/5 text-neutral-400 hover:text-violet-400 hover:border-violet-500/30 hover:bg-violet-500/5 transition-all duration-300"
+                    className="p-2.5 rounded-lg bg-white border border-neutral-200 text-neutral-600 hover:text-violet-600 hover:border-violet-300 hover:bg-violet-50 transition-all duration-300"
                     aria-label={link.label}
                   >
                     {link.icon}
@@ -114,14 +114,14 @@ export default function Footer() {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
+          <div className="h-px bg-gradient-to-r from-transparent via-neutral-200 to-transparent mb-8" />
 
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-neutral-600">
+            <p className="text-xs text-neutral-500">
               © {currentYear} Muhammad Zeshan Tahir. All rights reserved.
             </p>
-            <p className="text-xs text-neutral-600 flex items-center gap-1.5">
+            <p className="text-xs text-neutral-500 flex items-center gap-1.5">
               Built with{" "}
               <Heart className="w-3 h-3 text-rose-500 fill-current" /> using
               Next.js & Tailwind CSS

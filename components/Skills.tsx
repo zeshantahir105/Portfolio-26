@@ -107,10 +107,10 @@ export default function Skills() {
             <p className="text-violet-400 text-sm font-medium tracking-wider uppercase mb-3">
               What I Work With
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-neutral-100 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 mb-4">
               My Tech Arsenal
             </h2>
-            <p className="text-lg text-neutral-500 max-w-xl mx-auto">
+            <p className="text-lg text-neutral-600 max-w-xl mx-auto">
               A curated set of modern tools I use to build exceptional products
             </p>
           </div>
@@ -122,13 +122,13 @@ export default function Skills() {
                 <div key={index} className="group relative">
                   <div
                     className={`
-                    relative px-5 py-3 rounded-2xl bg-neutral-900/80 border border-white/5
-                    hover:border-white/20 transition-all duration-300
+                    relative px-5 py-3 rounded-2xl bg-white border border-neutral-200
+                    hover:border-violet-300 hover:shadow-md transition-all duration-300
                     flex items-center gap-3
                   `}
                   >
                     <span className="text-xl">{tech.icon}</span>
-                    <span className="text-neutral-200 font-medium">
+                    <span className="text-neutral-800 font-medium">
                       {tech.name}
                     </span>
                   </div>
@@ -144,8 +144,8 @@ export default function Skills() {
                 key={index}
                 className={`
                   group relative p-6 rounded-2xl
-                  bg-gradient-to-br from-white/[0.03] to-transparent
-                  border border-white/5 ${borderColors[category.accent]}
+                  bg-white
+                  border border-neutral-200 ${borderColors[category.accent]}
                   transition-colors duration-300
                 `}
               >
@@ -161,7 +161,7 @@ export default function Skills() {
                       {category.icon}
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-neutral-100">
+                      <h3 className="text-lg font-semibold text-neutral-900">
                         {category.title}
                       </h3>
                       <p className="text-xs text-neutral-500">
@@ -176,7 +176,7 @@ export default function Skills() {
                   {category.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="px-3 py-1.5 rounded-lg bg-white/[0.03] border border-white/5 text-xs text-neutral-400"
+                      className="px-3 py-1.5 rounded-lg bg-neutral-50 border border-neutral-200 text-xs text-neutral-700"
                     >
                       {skill}
                     </span>
@@ -188,35 +188,35 @@ export default function Skills() {
 
           {/* Bottom Stats/Highlights */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center p-4 rounded-xl bg-white/[0.02] border border-white/5">
+            <div className="text-center p-4 rounded-xl bg-white border border-neutral-200">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Layers className="w-4 h-4 text-violet-400" />
-                <span className="text-2xl font-bold text-neutral-100">15+</span>
+                <span className="text-2xl font-bold text-neutral-900">15+</span>
               </div>
-              <p className="text-xs text-neutral-500">Technologies</p>
+              <p className="text-xs text-neutral-600">Technologies</p>
             </div>
-            <div className="text-center p-4 rounded-xl bg-white/[0.02] border border-white/5">
+            <div className="text-center p-4 rounded-xl bg-white border border-neutral-200">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Zap className="w-4 h-4 text-amber-400" />
-                <span className="text-2xl font-bold text-neutral-100">4</span>
+                <span className="text-2xl font-bold text-neutral-900">4</span>
               </div>
-              <p className="text-xs text-neutral-500">Years Experience</p>
+              <p className="text-xs text-neutral-600">Years Experience</p>
             </div>
-            <div className="text-center p-4 rounded-xl bg-white/[0.02] border border-white/5">
+            <div className="text-center p-4 rounded-xl bg-white border border-neutral-200">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Shield className="w-4 h-4 text-emerald-400" />
-                <span className="text-2xl font-bold text-neutral-100">
+                <span className="text-2xl font-bold text-neutral-900">
                   100%
                 </span>
               </div>
-              <p className="text-xs text-neutral-500">Code Quality</p>
+              <p className="text-xs text-neutral-600">Code Quality</p>
             </div>
-            <div className="text-center p-4 rounded-xl bg-white/[0.02] border border-white/5">
+            <div className="text-center p-4 rounded-xl bg-white border border-neutral-200">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Sparkles className="w-4 h-4 text-cyan-400" />
-                <span className="text-2xl font-bold text-neutral-100">AI</span>
+                <span className="text-2xl font-bold text-neutral-900">AI</span>
               </div>
-              <p className="text-xs text-neutral-500">Enhanced Workflow</p>
+              <p className="text-xs text-neutral-600">Enhanced Workflow</p>
             </div>
           </div>
         </div>
