@@ -49,6 +49,7 @@ export default function Skills() {
         "REST APIs",
         "GraphQL",
         "WebSockets",
+        "RabbitMQ",
       ],
       accent: "emerald",
     },
@@ -70,7 +71,14 @@ export default function Skills() {
       icon: <Globe className="w-5 h-5" />,
       title: "Cloud & DevOps",
       description: "Infrastructure & deployment",
-      skills: ["AWS", "GCP", "Docker", "CI/CD", "GitHub Actions", "Vercel"],
+      skills: [
+        "AWS",
+        "GCP",
+        "Docker Containerization",
+        "CI/CD",
+        "GitHub Actions",
+        "Vercel",
+      ],
       accent: "cyan",
     },
   ];
