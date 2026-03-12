@@ -112,7 +112,7 @@ export default function Hero() {
                   LinkedIn
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/19Sb8X_DUqs_1jF3CrzFwujJlTUPN6sQ-/view?usp=drive_link"
+                  href="https://drive.google.com/drive/folders/1sbixgZeyICXZ87MwEzgf4nM_ciDufZYF?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-neutral-200 rounded-lg font-medium transition-all duration-300"

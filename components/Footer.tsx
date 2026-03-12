@@ -38,7 +38,7 @@ export default function Footer() {
     },
     {
       icon: <FileText className="w-4 h-4" />,
-      href: "https://drive.google.com/file/d/19Sb8X_DUqs_1jF3CrzFwujJlTUPN6sQ-/view?usp=drive_link",
+      href: "https://drive.google.com/drive/folders/1sbixgZeyICXZ87MwEzgf4nM_ciDufZYF?usp=drive_link",
       label: "Resume",
     },
   ];
