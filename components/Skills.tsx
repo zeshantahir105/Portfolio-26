@@ -50,6 +50,7 @@ export default function Skills() {
         "GraphQL",
         "WebSockets",
         "RabbitMQ",
+        "Socket.IO",
       ],
       accent: "emerald",
     },
