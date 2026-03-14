@@ -43,7 +43,7 @@ export default function WhyWorkWithMe() {
   ];
 
   const stats = [
-    { value: "4+", label: "Years of Experience" },
+    { value: "4", label: "Years of Experience" },
     { value: "25+", label: "Projects Delivered" },
     { value: "100%", label: "Client Satisfaction" },
   ];
